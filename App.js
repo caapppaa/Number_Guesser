@@ -1,4 +1,4 @@
-import { StatusBar } from "expo-status-bar";
+
 import { StyleSheet, Text, ImageBackground } from "react-native";
 import StartGameScreen from "./screens/StartGameScreen";
 import { LinearGradient } from "expo-linear-gradient";
