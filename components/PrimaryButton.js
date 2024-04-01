@@ -1,4 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
+import Colours from "../constants/colours";
 
 // If you use {} you can use object destructuring,
 // Instead of writing props.children you can just write children
@@ -18,7 +19,7 @@ function PrimaryButton({ children, onPress }) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    backgroundColor: "#0a0723",
+    backgroundColor: Colours.primaryButtonBlue,
     borderRadius: 28,
     paddingVertical: 8,
     paddingHorizontal: 16,
