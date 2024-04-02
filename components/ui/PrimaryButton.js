@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import Colours from "../constants/colours";
+import Colours from "../../constants/colours";
 
 // If you use {} you can use object destructuring,
 // Instead of writing props.children you can just write children
