@@ -1,8 +1,13 @@
-import { Text } from "react-native"
+import { Text, View } from "react-native";
+import Title from "../components/ui/Title";
 
-function GameOver () {
-    return <Text>Game Is Over</Text>
+function GameOver() {
+  return (
+    <View>
+      <Title>Game Is Over</Title>
+      <Image source={require('../assets/images/success.png')} />
+    </View>
+  );
 }
-
 
 export default GameOver;
