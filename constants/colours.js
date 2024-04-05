@@ -3,7 +3,8 @@ const Colours = {
     primaryGreen: "#183f31",
     primaryButtonBlue: "#0a0723",
     primaryBlack: "#000000",
-    primaryWhite: "#ffffff"
+    primaryWhite: "#ffffff",
+    primaryLightBlue: "#abd7f4c6"
 };
 
 export default Colours;
