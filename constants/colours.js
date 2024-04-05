@@ -4,7 +4,8 @@ const Colours = {
     primaryButtonBlue: "#0a0723",
     primaryBlack: "#000000",
     primaryWhite: "#ffffff",
-    primaryLightBlue: "#abd7f4c6"
+    primaryLightBlue: "#abd7f4c6",
+    primaryWhiteOpaque: "#d0ddd3ff"
 };
 
 export default Colours;
