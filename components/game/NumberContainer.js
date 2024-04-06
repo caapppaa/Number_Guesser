@@ -1,31 +1,33 @@
-import { View, Text } from "react-native";
-import { StyleSheet } from "react-native";
+import { View, Text, Dimensions, StyleSheet } from "react-native";
 import Colours from "../../constants/colours";
 
-function NumberContainer ({children}) {
-    return (
-        <View style={styles.container}> 
-            <Text style={styles.numberText}>{children}</Text>
-        </View>
-    )
+function NumberContainer({ children }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.numberText}>{children}</Text>
+    </View>
+  );
 }
 
+const deviceWidth = Dimensions.get("window").width;
+
 const styles = StyleSheet.create({
-    container: {
-        borderWidth: 4,
-        borderColor: Colours.primaryDarkBlue,
-        padding: 24, 
-        borderRadius: 8,
-        margin: 24,
-        alignItems: 'center',
-        justifyContent: 'center', 
-        backgroundColor: '#ffffff'
-    },
-    numberText: {
-        color: Colours.primaryDarkBlue,
-        fontSize: 36,
-        fontFamily: 'open-sans-bold'
-    }
-})
+  container: {
+    borderWidth: 4,
+    borderColor: Colours.primaryDarkBlue,
+    padding: deviceWidth < 380 ? 12 : 24,
+    borderRadius: 8,
+    margin: deviceWidth < 380 ? 12 : 24,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ffffff",
+    minWidth: "35%",
+  },
+  numberText: {
+    color: Colours.primaryDarkBlue,
+    fontSize: deviceWidth < 380 ? 28 : 36,
+    fontFamily: "open-sans-bold",
+  },
+});
 
 export default NumberContainer;
